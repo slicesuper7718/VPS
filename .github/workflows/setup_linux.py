@@ -3,7 +3,7 @@ import os
 import subprocess
 import shutil
 
-CRD_SSH_Code = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AVGzR1DGLbIrdjIbqqU2Z8hUdbpL8Ms26RciuXMHVfMM2zNLxnIHj9XeSa3ovhO0kW9x2A" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)"
+CRD_SSH_Code = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AVGzR1BLZSMR6z9xmeplx5GytsREEmt1y4x2K2dfqhLdvtDxrpHUM5bmS4cPcBlrc5OUUg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)"
 username = "sabir7718"
 password = "root"      # <-- new user's password set to 'root' as you requested
 Pin = 771828          # Chrome Remote Desktop PIN (unchanged)
