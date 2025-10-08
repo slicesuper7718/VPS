@@ -1,0 +1,26 @@
+name: Setup Linux Environment
+
+on:
+  workflow_dispatch: # allows manual triggering from GitHub UI
+
+jobs:
+  setup-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Python3 and Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3 python3-pip wget tar xfce4 xfce4-terminal xscreensaver dbus-x11
+
+      - name: Make Python Script Executable
+        run: chmod +x setup_linux.py
+
+      - name: Run Setup Script
+        env:
+          CRD_SSH_CODE: ${{ secrets.CRD_SSH_CODE }} # optional, if you want to pass CRD code securely
+        run: |
+          python3 setup_linux.py
